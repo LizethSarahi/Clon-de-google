@@ -1,0 +1,238 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-family: "sans-serif";
+    background-color: #202124;
+    background-image:
+                  url('Imagenes/Molecula(1).png');
+background-repeat: repeat; /* Repite la imagen tanto horizontal como verticalmente */
+background-position: top left; /* Alinea la imagen en la esquina superior izquierda */
+}
+
+
+a {
+    color: #ffffff; /* Cambia el color del enlace, en este caso a un tono blanco*/
+    font-family: 'Arial', sans-serif; /* Cambia la fuente del enlace */
+    text-decoration: solid; /* Elimina el subrayado del enlace */
+    cursor: Pointer; /*Cambia el cursor al estilo "mano" cuando se pasa sobre un enlace, indicando que es clicable.*/
+}
+
+a:hover {
+    color: #002fff; /* Cambia el color del enlace cuando se pasa el cursor por encima */
+    text-decoration: underline; /* Agrega subrayado cuando se pasa el cursor por encima */
+}
+.link{
+    color:#002fff;
+}
+header {
+    width: 100%; /*El encabezado ocupa el 100% del ancho de la pantalla.*/
+    height: 60px; /*El encabezado tiene una altura fija de 60px.*/
+}
+header nav{
+    display: flex; /*Utiliza flexbox para organizar los elementos hijos en una fila.*/
+    justify-content: flex-end;  /*Alinea los elementos hijos a la derecha del contenedor de navegación.*/
+}
+header nav .nav-right-section {
+    width: 250px;
+    height: auto;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+nav .nav-right-section a{ 
+    margin-right: 25px; /*Separación entre links y elementos*/
+}
+nav .nav-right-section .menu-icon{
+    background-image: url('Imagenes/boton google.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    margin-right:2px;
+}
+nav .nav-right-section img {
+    margin-right: 25px;
+    border-radius: 50px;
+    border-style: solid;
+    border-width: 0px;
+    border-color: #202124;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+}
+main {
+    margin-top: 150px;
+    text-align: center;
+}
+main .main-logo{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+main .main-logo img{
+    width: 330px;
+    height: 120px;
+}
+main .main-input {
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+main .main-input.container{
+    width: 530px; /* Ajusta el ancho si es necesario */
+    border-radius: 100px;
+    border: 1px solid #626364;
+    display: flex;
+    justify-content: space-between; /* Ajusta el espacio entre los elementos */
+    align-items: center;
+    padding: 5px 15px; /* Añade padding para asegurar que los íconos estén dentro del borde */
+    }
+    main .main-input input{
+        width: calc(100% - 48px);
+        height: 40px;
+        border: none;
+        outline: none;
+        background-color: transparent; /* Cambia el fondo a transparente */
+        color: #fff; /* Ajusta el color del texto si es necesario */
+        padding: 0 10px; /* Agrega un poco de padding para separar el texto del borde */
+        
+    }
+
+    main .main-input-container:hover{
+        box-shadow: 0 1px 6px 0 #20212447;
+        border-color: #dfe1e500;
+    }
+
+    .main-input .search.icon {
+        background-image: url('Imagenes/search.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 28px; /* Ajusta el tamaño de los íconos para que no se salgan del borde */
+        width: 28px;/* Asegura un ancho suficiente para que el icono esté centrado */
+        height: 24px;/* Asegura un alto suficiente para que el icono esté centrado */
+        cursor: pointer;
+        flex-shrink: 0; /* Evita que el ícono se redimensione */
+        margin-right: 10px; /* Separa el icono de búsqueda del input */
+
+    }
+     .main-input .micro.icon {
+        background-image: url('Imagenes/micro.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 28px;
+        width: 28px;
+        height: 24px;
+        cursor: pointer;
+        margin-left: 8px; /* Separa el icono de micrófono del input */
+        flex-shrink: 0; /* Evita que el ícono se redimensione */
+    }
+    .main-input .lens {
+        background-image: url('Imagenes/lens.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 28px;
+        width: 28px;
+        height: 24px;
+        cursor: pointer;
+        margin-left: 8px; /* Separa el icono de micrófono del input */
+        flex-shrink: 0; /* Evita que el ícono se redimensione */
+    }
+    main .main-input.container:hover {
+        box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+        border-color: #dfe1e5;
+    }
+    main .main-input input:focus {
+        border-color: transparent; /* Remueve el borde predeterminado al enfocar */
+    }
+    /*Botones*/
+    main .main-buttons {
+        width: 800px;
+        margin: 0 auto;
+    }
+    
+    main .main-buttons div {
+        display: inline-block;  
+    }
+    
+    main .main-buttons button {
+        height: 60px; /* Aumenté la altura */
+        background-color: #303134;
+        border: 0;
+        font-size: 16px; /* Aumenté el tamaño de la fuente */
+        color: #ffffff;
+        border-radius: 4px;
+        padding: 0 25px; /* Aumenté el padding horizontal */
+        margin-right: 15px;
+        cursor: pointer;
+    }
+    
+    main .main-buttons button:hover {
+        border: 1px solid #c6c6c6;
+        box-shadow: 0 1px 1px #303134;
+        color: #000000;
+    }
+/*pie de página*/
+
+.mexico {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 50px; /* Ajusta para que esté justo arriba del footer */
+    display: grid;
+    grid-template-columns: auto 1fr 1fr; /* Ajusta a tres columnas */
+    align-items: center;
+    font-size: 16px; /* Aumenta el tamaño del texto */
+    background-color: #0e0d0dce;
+    border-top: 3px solid #4b4b4bd8; /* Aumenta el grosor del borde */
+    z-index: 10; /* Asegura que la barra esté por encima de otros elementos */
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: auto 1fr 1fr; /* Ajusta a tres columnas */
+    align-items: center;
+    font-size: 16px; /* Aumenta el tamaño del texto */
+    background-color: #0e0d0dce;
+    border-top: 3px solid #4b4b4bd8; /* Aumenta el grosor del borde */
+    z-index: 5; /* Mantiene el footer detrás de .mexico */
+}
+
+footer ul {
+    margin: 0; /* Elimina márgenes adicionales */
+    padding: 0; /* Elimina padding adicional */
+    list-style: none;
+    display: flex;
+}
+
+.footer-left {
+    justify-self: start; /* Alinea los elementos a la izquierda */
+    grid-column: 2 / 3; /* Asegura que los enlaces de la izquierda estén en la segunda columna */
+}
+
+.footer-right {
+    justify-self: end; /* Alinea los elementos a la derecha */
+    padding-right: 20px; /* Asegura que haya espacio suficiente a la derecha */
+    grid-column: 3 / 4; /* Asegura que los enlaces de la derecha estén en la tercera columna */
+}
+
+footer ul li a {
+    margin: 0 10px; /* Ajusta los márgenes de los enlaces */
+    color: #ffffff;
+    text-decoration: none; /* Elimina subrayado si es necesario */
+}
+
+footer ul li a:hover {
+    text-decoration: underline; /* Subraya los enlaces al pasar el ratón */
+}
+
+p{
+    color:#fff
+}
+
